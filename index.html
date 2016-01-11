@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tu veux voir mon Péniche ?</title>
+    <style>
+    html, body {
+    	height: 100%;
+    	margin: 0;
+    	overflow: none;
+    	font-family: 'Helvetica', Arial, sans-serif;
+    }
+
+    .actions {
+    	height: 60px;
+    	width: 100%;
+    	background: #1EA7B4;
+    	position: absolute;
+    	left: 0;
+    	bottom: 0;
+    	color: white;
+    }
+
+    .btns {
+    	margin: 0 auto;
+    	width: 470px;
+    }
+
+    .btn {
+    	display: block;
+    	color: white;
+    	text-decoration: none;
+    	padding: 10px 18px;
+	    float: left;
+	    border: 1px white solid;
+	    margin: 10px;
+	    border-radius: 5px;
+    }
+
+    .btn.special {
+    	font-weight: bold;
+    }
+
+    .btn:hover {
+    	background: white;
+    	color: #1EA7B4;
+    }
+
+    .blink {
+	  animation: blink 0.8s linear infinite;
+	  -webkit-animation: blink 0.8s linear infinite;
+	}
+
+	@keyframes blink {
+	    0% { opacity: 1.0; }
+	   	10% { opacity: 0.0; }
+	    20% { opacity: 1.0; }
+	    100% { opacity: 1.0; }
+	}
+	@-webkit-keyframes blink {
+	    0% { opacity: 1.0; }
+	   	10% { opacity: 0.0; }
+	    20% { opacity: 1.0; }
+	    100% { opacity: 1.0; }
+	}
+    </style>
+    <script>
+    var iframeResize = function() {
+    	document.getElementById('iframe').height = window.innerHeight - 60;
+    }
+
+    document.addEventListener("DOMContentLoaded", function(event) { 
+	  iframeResize();
+	});
+    </script>
+  </head>
+  <body>
+    <iframe src="https://slate.adobe.com/cp/kELgK/" frameBorder="0" width="100%" id="iframe"></iframe>
+
+    <div class="actions">
+    	<div class="btns">
+	    	<a href="https://www.lepotcommun.fr/pot/1e7ybq94" target="_blank" class="btn">Payer ma place</a>
+	    	<a href="https://www.dropbox.com/l/qXzVkG9ABl1oEqtPZNlwUE" target="_blank" class="btn special"><span class="blink">Envoyer vos meilleures photos!</span></a>
+	    	<br clear="all" />
+	    </div>
+    </div>
+  </body>
+</html>
